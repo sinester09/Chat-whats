@@ -1,0 +1,32 @@
+# ─── OpenAI ───────────────────────────────────────────────
+OPENAI_API_KEY=sk-proj-XXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+# ── Modo Assistant (ChatGPT Studio) ───────────────────────
+# Si defines ASSISTANT_ID → usa tu agente configurado en ChatGPT Studio
+# Si lo dejas vacío       → usa Chat Completions (ChatGPT directo)
+ASSISTANT_ID=asst_XXXXXXXXXXXXXXXXXXXXXXXX
+
+# ── Modo Chat Completions (sin agente) ────────────────────
+# Solo se usa si ASSISTANT_ID está vacío
+
+# Modelo a usar (gpt-4o, gpt-4o-mini, gpt-3.5-turbo, etc.)
+CHAT_MODEL=gpt-4o
+
+# Prompt de sistema que define la personalidad/rol del bot
+SYSTEM_PROMPT=Eres un asistente útil que responde por WhatsApp. Sé conciso y claro.
+
+# Máximo de tokens por respuesta
+MAX_TOKENS=1000
+
+# ─── Configuración del bot ────────────────────────────────
+# Solo responde mensajes de estos números (formato: 51987654321@c.us)
+# Separa con comas. Deja vacío para responder a TODOS
+ALLOWED_NUMBERS=
+
+# Prefijo que debe incluir el mensaje para activar el bot
+# Deja vacío para responder a todo
+# Ejemplo: !gpt → solo responde si el mensaje empieza con !gpt
+TRIGGER_PREFIX=
+
+# Tiempo máximo de espera para respuesta OpenAI (ms)
+TIMEOUT_MS=30000
